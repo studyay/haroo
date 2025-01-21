@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: 'Ongeulip-Haessi';
+            src: url(Ongeulip-Haessi.ttf);
+        }
+
+        * {
+            font-family: 'Ongeulip-Haessi';
+        }
+
+        body {
+            width: 325px;
+            margin: 30px auto 0px auto;
+            background-color: #2580CC;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .myImage {
+            margin-top: 80px;
+            margin-bottom: 30px;
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            background-image: url('profile.png');
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 0px 30px white;
+        }
+
+        #marpple {
+            width: 30px;
+            height: 30px;
+            background-image: url('https://static.wixstatic.com/media/b84bd0_1d3db5f31d04413282c5da7befdb6ff5~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b84bd0_1d3db5f31d04413282c5da7befdb6ff5~mv2.png');
+            background-position: center;
+            background-size: cover;
+        }
+
+        h1 {
+            color: white;
+            font-size: 45px;
+            margin-top: 20px;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.8);
+            margin: 3px;
+            font-size: 20px;
+        }
+
+        a {
+            width: 317px;
+            height: 50px;
+            background-color: white;
+            margin-bottom: 10px;
+            padding-right: 10px;
+            border-radius: 10px;
+            color: #2580CC;
+            text-decoration: none;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: transform 1.0s;
+        }
+
+        a:hover {
+            background-color: #004491;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .language-icon {
+            cursor: pointer;
+            font-size: 24px;
+            position: absolute;
+            right: 0;
+            top: 30px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="language-icon">
+        <div id="marpple" onclick="location.href='https://marpple.shop/kr/Another_step_today';"></div>
+        <div id="korean" style="margin-right: 4px;">🇰🇷</div>
+        <div id="english">🇺🇸</div>
+    </div>
+
+    <div class="myImage"></div>
+
+    <div id="content">
+        <p>당신의 삶은 어떻게 흘러가고 있나요?</p>
+        <p>오늘의 한 걸음을 묻다,</p>
+        <h1>오늘도 한 걸음</h1>
+        <a target="_blank" href="https://www.youtube.com/watch?v=SjjsAAjkipQ">애니메이션</a>
+        <a target="_blank" href="https://blog.naver.com/affinityuniverse/223272639901">블로그 포스팅</a>
+        <a target="_blank"
+            href="https://www.valuetimes.co.kr/Talent/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6ODt9&bmode=view&idx=16911296&t=board">인터뷰
+            기사</a>
+        <a target="_blank" href="https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000005475729">교보문고</a>
+        <a target="_blank" href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=328981869">알라딘</a>
+        <a target="_blank" href="https://www.yes24.com/Product/Goods/123689288">예스24</a>
+    </div>
+
+    <div id="content-en" style="display: none;">
+        <p>How is your life going?</p>
+        <p>Ask about today’s steps,</p>
+        <h1>Another step today</h1>
+        <a target="_blank" href="https://www.youtube.com/watch?v=g1EEyTO5P_Q">animation</a>
+        <a target="_blank"
+            href="https://www.valuetimes.co.kr/Talent/?q=YToyOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjtzOjQ6InBhZ2UiO2k6NTt9&bmode=view&idx=26901725&t=board">interview
+            article</a>
+        <a target="_blank"
+            href="https://www.amazon.com/Another-Step-Today-Ayeong-Choi-ebook/dp/B0D5BFMX8X/ref=sr_1_1?crid=2GGP0GD7XAC5A&dib=eyJ2IjoiMSJ9.EpIAgCUoxEdzvO7gyiYp_nyR5WPUS6-2JGBdVyYonT97pf4BsEYEJxszxGW9U0izLO5uc4a7Imr3451FjlR0-SEIVVIQ94aKEuyoYUX5jFoBEAxFkw7VlLzybQLl8xT6dE-r-7Jpqlc-YB_MOiFYfkPeRcjTt2gAec02WzFSS3okAX0OVFjE42-jjnl4P9JWBVzrXBXG5QL2ojeoGJ44xDeBpalVdOqFbU8Nm3SME0fzJrGHAEL8R8zSE6Fj9VhEvYKdf0OoPj2ttV1e6ycCccaMePTvVA3bQu5wYEkgSmw.VnYSaGQnU8C9Lm5Z2riGuFNfhgBLpxDbrXzYiJfvdcI&dib_tag=se&keywords=another+step+today&qid=1737453076&s=books&sprefix=another+step+toda%2Cstripbooks-intl-ship%2C245&sr=1-1">amazon</a>
+        <a target="_blank"
+            href="https://play.google.com/store/books/details/Ayeong_Choi_Another_Step_Today?id=JtcJEQAAQBAJ">google
+            play</a>
+    </div>
+
+
+    <script>
+        const koreanContent = document.getElementById('content');
+        const englishContent = document.getElementById('content-en');
+
+        document.getElementById('korean').onclick = function () {
+            koreanContent.style.display = 'block';
+            englishContent.style.display = 'none';
+        };
+
+        document.getElementById('english').onclick = function () {
+            koreanContent.style.display = 'none';
+            englishContent.style.display = 'block';
+        };
+    </script>
+</body>
+
+</html>
